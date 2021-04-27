@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study-Form</title>
+    <link rel="stylesheet" href="style/style-form.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1 id="title">Program Teachind Young Adults and Adults How to Read</h1>
+            <p id="description">fill out the form bellow: </p>
+        </header>
+        <div id=container>
+            <form action="" id="survey-form">
+
+                <h2>Your Information: </h2>
+                <label for="name" id="name-label"> Name: <input type="text" id="name" placeholder="Your Name"></label>
+                <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="example@xmail.com"></label>
+                <label for="age" id="number-label" min="15" max="80">Age: <input type="number" id="age" placeholder="15"></label>
+
+                <h2>Education Level: </h2>
+                <select name="dropdown" id="dropdown">
+                    <option value="elementary">Elementary School</option>
+                    <option value="middle">Middle School</option>
+                    <option value="junior">Junior High</option>
+                </select>
+
+                <div id="study-shift">
+                    <h2>Choose A Shift: </h2>
+                    <label for="morning"><input type="radio" name="shift" id="morning">Morning</label>
+                    <label for="afternoon"><input type="radio" name="shift" id="afternoon">Afternoon</label>
+                    <label for="night"><input type="radio" name="shift" id="night">Night</label>
+                </div>
+
+                <div></div>
+
+            </form>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
