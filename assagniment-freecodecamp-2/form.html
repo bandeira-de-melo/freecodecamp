@@ -8,40 +8,85 @@
     <link rel="stylesheet" href="style/style-form.css">
 </head>
 <body>
-    <div id="container">
+    <div id="bkg-header">
         <header>
-            <h1 id="title">Program Teachind Young Adults and Adults How to Read</h1>
-            <p id="description">fill out the form bellow: </p>
+            <h1 id="title">TEACHING PROGRAM</h1>
+            <p id="description">FILL OUT THE FORM BELLOW: </p>
         </header>
+    </div>
+    <main>
+        
         <div id=container>
             <form action="" id="survey-form">
 
-                <h2>Your Information: </h2>
-                <label for="name" id="name-label"> Name: <input type="text" id="name" placeholder="Your Name"></label>
-                <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="example@xmail.com"></label>
-                <label for="age" id="number-label" min="15" max="80">Age: <input type="number" id="age" placeholder="15"></label>
+                <h2>YOUR INFOMATION: </h2>
+                <ul>
+                <div id="info">
+                    <label for="name" id="name-label"> Name: <br><input type="text" class="field" id="name" placeholder="Your Name" required></label>
+                </div>
+                <div id="info">
+                    <label for="email" id="email-label">Email: <br><input type="email" class="field"  id="email" placeholder="example@xmail.com" required></label>
+                </div>
+                <div id="info">
+                    <label for="number" id="number-label">Age: <br><input type="number" class="field"  id="number" placeholder="15" required min="15" max="80"></label>
+                </div>
+                </ul>
 
-                <h2>Education Level: </h2>
-                <select name="dropdown" id="dropdown">
+                <h2>EDUCATION LEVEL: </h2>
+                <select name="dropdown" class="field" id="dropdown">
+                    <option value="selected" selected>--CHOOSE ONE OPTION--</option>
                     <option value="elementary">Elementary School</option>
                     <option value="middle">Middle School</option>
                     <option value="junior">Junior High</option>
                 </select>
 
                 <div id="study-shift">
-                    <h2>Choose A Shift: </h2>
-                    <label for="morning"><input type="radio" name="shift" id="morning">Morning</label>
-                    <label for="afternoon"><input type="radio" name="shift" id="afternoon">Afternoon</label>
-                    <label for="night"><input type="radio" name="shift" id="night">Night</label>
+                    <h2>CHOOSE A SHIFT: </h2>
+                    <div class="items">
+                        <label class="radio-ck" for="morning"><input type="radio" name="shift" value="morning" id="morning" checked="checked"> Morning
+                        <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="items">
+                        <label class="radio-ck" for="afternoon"><input type="radio" name="shift" value="afternoon" id="afternoon"> Afternoon
+                        <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="items">
+                        <label class="radio-ck" for="night"><input type="radio" name="shift" value="night" id="night"> Night
+                        <span class="checkmark"></span>
+                        </label>
+                    </div>
                 </div>
 
-                <div></div>
-
+                <div id="how-you-know">
+                    <h2>HOW YOU DID YOU GET TO KNOW ABOUT THIS PROGRAM?</h2>
+                    <div>
+                        <div class="items">
+                        <label for="social"><input type="checkbox" name="check" value="social" id="social"> Social Media</label>
+                        </div>
+                        <div class="items">
+                        <label for="friends"><input type="checkbox" name="check" value="friends" id="friends"> Friends</label>
+                        </div>
+                        <div class="items">
+                        <label for="tv"><input type="checkbox" name="check" value="tv"id="tv"> TV</label>
+                        </div>
+                        <div class="items">
+                        <label for="radio"><input type="checkbox" name="check" value="radio" id="radio"> Radio</label>
+                        </div>
+                    </div>    
+                </div>
+                
+                <div id="story">
+                    <h2>TELL US A LITTLE BIT ABOUT YOUR SCHOOL EXPERIENCE: </h2>
+                    <textarea name="" id="txtarea" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" id="submit" value="SUBMIT">
             </form>
 
         </div>
 
-    </div>
+    </main>
     
 </body>
 </html>
