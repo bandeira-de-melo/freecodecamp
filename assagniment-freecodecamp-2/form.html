@@ -40,42 +40,77 @@
                     <option value="junior">Junior High</option>
                 </select>
 
-                <div id="study-shift">
+                <div id="study-shift"> <!--SHIFT-->
                     <h2>CHOOSE A SHIFT: </h2>
-                    <div class="items">
-                        <label class="radio-ck" for="morning"><input type="radio" name="shift" value="morning" id="morning" checked="checked"> Morning
-                        <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="items">
-                        <label class="radio-ck" for="afternoon"><input type="radio" name="shift" value="afternoon" id="afternoon"> Afternoon
-                        <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="items">
-                        <label class="radio-ck" for="night"><input type="radio" name="shift" value="night" id="night"> Night
-                        <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </div>
+                    
+                      <div id="btn-lbl">
+                        <div>
+                          <label class="radio-ck">
+                            <input type="radio" name="shift" value="morning" id="morning" checked>
+                            <span class="checkmark"></span> 
+                          </label>
+                        </div>
+                        <div>
+                          <label id="lbl-radio" for="morning">Morning</label>
+                        </div>
+                      </div>
 
-                <div id="how-you-know">
+
+                      <div id="btn-lbl">
+                        <div>
+                          <label class="radio-ck">
+                            <input type="radio" name="shift" value="afternoon" id="afternoon">
+                            <span class="checkmark"></span> 
+                          </label>
+                        </div>
+                        <div>
+                          <label id="lbl-radio" for="afternoon">Afternoon</label>
+                        </div>
+                      </div>
+
+
+                      <div id="btn-lbl">
+                        <div>
+                          <label class="radio-ck">
+                            <input type="radio" name="shift" value="night" id="night">
+                            <span class="checkmark"></span> 
+                          </label>
+                        </div>
+                        <div>
+                          <label id="lbl-radio" for="night">Night</label>
+                        </div>
+                      </div> 
+
+                  </div><!--END-SHIFT-->
+
+                <div id="how-you-know"> <!--HOW-->
                     <h2>HOW YOU DID YOU GET TO KNOW ABOUT THIS PROGRAM?</h2>
                     <div>
                         <div class="items">
-                        <label for="social"><input type="checkbox" name="check" value="social" id="social"> Social Media</label>
-                        </div>
+                          <label for="social" id="lbl-check">
+                          <input type="checkbox" name="check" value="social" id="social"> Social Media</label>
+                      <span class="bx-checked"></span>  
+                      </div>
+                      
                         <div class="items">
-                        <label for="friends"><input type="checkbox" name="check" value="friends" id="friends"> Friends</label>
-                        </div>
+                          <label for="friends" id="lbl-check">
+                          <input type="checkbox" name="check" value="friends" id="friends"> Friends</label>
+                      <span class="bx-checked"></span>    
+                      </div>
+                      
                         <div class="items">
-                        <label for="tv"><input type="checkbox" name="check" value="tv"id="tv"> TV</label>
-                        </div>
+                          <label for="tv" id="lbl-check">
+                          <input type="checkbox" name="check" value="tv"id="tv"> TV</label>
+                          <span class="bx-checked"></span>  
+                      </div>
+                      
                         <div class="items">
-                        <label for="radio"><input type="checkbox" name="check" value="radio" id="radio"> Radio</label>
-                        </div>
+                          <label for="radio" id="lbl-check">
+                          <input type="checkbox" name="check" value="radio" id="radio"> Radio</label>
+                          <span class="bx-checked"></span>   
+                      </div>
                     </div>    
-                </div>
+                </div><!--END-HOW-->
                 
                 <div id="story">
                     <h2>TELL US A LITTLE BIT ABOUT YOUR SCHOOL EXPERIENCE: </h2>

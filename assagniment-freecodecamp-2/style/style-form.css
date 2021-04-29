@@ -5,16 +5,13 @@
 }
 
 body{
-    background-image:url(/images/img-students.jpg);
+    background-image:url(https://images.pexels.com/photos/3768236/pexels-photo-3768236.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Helvetica;
     color: rgb(192, 238, 202);
     height: 100%;
-    margin: 0;
-    
-    
-    
+    margin: 0;    
 }
 
 header{
@@ -47,6 +44,7 @@ h2{
     margin-bottom: 10px;
     font-size: 17px;
     padding-left: 10px;
+    box-sizing: border-box;
 }
 
 
@@ -72,10 +70,12 @@ h2{
     margin: 15px;
     
 }
-
+#story{
+  width:auto;
+}
 #container{
     background-color:#ce4257b9;
-    width: 60%;
+    width: auto;
     padding: 2%;
     border-radius: 10px;
     margin-top: 20px;
@@ -107,21 +107,23 @@ option{
     text-align: center;
 }
 
-#story{
-    width: 100%;
-}
 
 #txtarea{
+    box-sizing: border-box;
     width: 100%;
     border: 1px solid #ccc;
     border-radius:1px 10px;
+  font-size: 17px;
 }
 
 .items{
     padding: 5px 0px 5px 0px;
     color: #ffdfc7;
     font-weight: bold;
+    display: flex;
+    align: items center;  
 }
+
 
 #submit{
     width: 100%;
@@ -132,4 +134,53 @@ option{
     font-size: 26px;
     color:  #ffffff;
     background-color: #FF7F51;
+}
+
+.radio-ck{
+  border: 2px solid #ffdfc7;
+  height:16px; /*must be an even number*/
+  width:16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  
+}
+
+.radio-ck .checkmark{
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #ffdfc7;
+  display:none;  
+}
+
+.radio-ck input {
+  display: none;
+}
+
+.radio-ck input:checked + .checkmark{
+   display: inline-block;
+}
+
+#btn-lbl{
+  display:flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"]{
+  width: 18px;
+  height: 18px;
+  margin-right: 10px; 
+}
+
+input[type="checkbox"]:checked .bx-checked{
+   background-color: red;
+} 
+
+#lbl-check{
+  display: flex;
+  align-items: center;
 }
