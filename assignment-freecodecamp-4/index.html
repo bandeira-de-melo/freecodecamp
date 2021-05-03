@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main-doc">
+        <div id="section-container">
+            <section id="Introduction" class="main-section">
+                <header>
+                    Introduction
+                </header>
+                <p>
+                    The education program project is a program to teach adults how
+                    to read. The main purpuse behind it is to give people better
+                    professional opportunities through the capacity of self education
+                    after they reach a good level of reading and text compreehention.
+                </p>
+                <p>
+                </p>
+                <p id="list-title">Initial steps: </p>
+                <ul>
+            
+                    <li>Get to know the students educational background.</li>
+                    <li>Know how did they got to know about our project.</li>
+                    <li>Check how do they feel about school.</li>
+                    <li>Ask what are some professional goals they have for their life.</li>
+                    <li>Ask what do they expect from this program.</li>
+                </ul>
+            </section>
+            <section id="Starting_with_the_form" class="main-section">
+                <header>
+                    Starting with the form
+                </header>
+                <p>
+                    the first section of the form is composed by 3 input fields
+                    related to the student's personal information.
+                </p>
+                <p>
+                    That way we can contact them and organize their data.
+                </p>
+                <pre>
+                    <code>
+    &lt;div id="info"&gt;
+        &lt;label for="name" id="name-label"&gt; Name: &lt;br&gt; 
+        &lt;input type="text" class="field" id="name" placeholder="Your Name" required> &lt;/label>
+    &lt;/div>
+    &lt;div id="info">
+        &lt;label for="email" id="email-label">Email: &lt;br>
+            &lt;input type="email" class="field"  id="email" placeholder="example@xmail.com" required>
+        &lt;/label>
+    &lt;/div>
+    &lt;div id="info">
+        &lt;label for="number" id="number-label"&gt;Age: &lt;br;
+            &lt;input type="number" class="field"  id="number" placeholder="15" required min="15" max="80"&gt;
+        &lt;/label>
+    &lt;/div &gt;
+                    </code>
+                </pre>
+            </section>
+            <section id="Educational_level" class="main-section">
+                <header>
+                    Educational level
+                </header>
+                <p>
+                    In this section we gather basic information about the level
+                    of education each student has.
+                </p>
+                <p>
+                    In this maner we can assess the level of knowledge of each student
+                    so we can place the into the proper classes
+                </p>
+                <pre>
+                    <code>
+    &lt;select name="dropdown" class="field" id="dropdown">
+        &lt;option value="selected" selected>--CHOOSE ONE OPTION--&lt;/option>
+        &lt;option value="elementary">Elementary School&lt;/option>
+        &lt;option value="middle">Middle School&lt;/option>
+        &lt;option value="junior">Junior High&lt;/option>
+    &lt;/select>
+                    </code>
+                </pre>
+            </section>
+            <section id="Choosing_a_shift" class="main-section">
+                <header>
+                    Choosing a shift
+                </header>
+                <p>
+                    Here based on the students schedule we allow them to choose
+                    what's the best shift for them to attend to the classes.
+                </p>
+                <pre>
+                    <code>
+    &lt;div id="btn-lbl">
+        &lt;div>
+            &lt;label class="radio-ck">
+            &lt;input type="radio" name="shift" value="morning"
+            id="morning" checked>
+            &lt;span class="checkmark">&lt;/span>
+            &lt;/label>
+        &lt;/div>
+        &lt;div>
+        &lt;label id="lbl-radio" for="morning">Morning&lt;/label>
+        &lt;/div>
+    &lt;/div>
+                    </code>
+                </pre>
+            </section>
+            <section id="How_the_program_gets_known" class="main-section">
+                <header>
+                    How the program gets known
+                </header>
+                <p>
+                    In this section the students can inform us how did they
+                    get to know about our program.
+                </p>
+                <p>
+                    with this information we can keep track of how we can make the project reach as many people as possible.
+                </p>
+                <pre>
+                    <code>
+    &lt;div class="items">
+        &lt;label for="social" id="lbl-check">
+        &lt;input type="checkbox" name="check" value="social" id="social">
+        Social Media
+        &lt;/label>
+        &lt;span class="bx-checked">&lt;/span>
+    &lt;/div>
+                    </code>
+                </pre>
+            
+            </section>
+            <section id="Breif_students'_experience" class="main-section">
+                <header>
+                    Breif students' experience
+                </header>
+                <p>
+                    Here the student can tell us breifely about his esperience with
+                    school and education in general. in that way we can assess each
+                    individual background in a basic level.
+                </p>
+                <pre>
+                    <code>
+    &lt;div id="story">
+        &lt;h2>TELL US A LITTLE BIT ABOUT YOUR SCHOOL EXPERIENCE: &lt;/h2>
+        &lt;textarea name="" id="txtarea" cols="30" rows="10">&lt;/textarea>
+    &lt;/div>
+    &lt;input type="submit" id="submit" value="SUBMIT">
+                    </code>
+                </pre>
+            
+            </section>
+        </div>
+
+
+        
+        <nav id="navbar">
+            <header id="nav-title">Education Program</header>
+            <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#Starting_with_the_form"" class="nav-link">Starting with the form</a>
+            <a href="#Educational_level" class="nav-link">Educational level</a>
+            <a href="#Choosing_a_shift" class="nav-link">Choosing a shift</a>
+            <a href="#How_the_program_gets_known" class="nav-link">How the program gets known</a>
+            <a href="#Breif_students'_experience" class="nav-link">Breif students' experience</a>
+        </nav>
+    
+
+    </main>
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    color: rgb(70, 70, 70);
+    font-family: Roboto Condensed ;
+}
+#main-doc{
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    width: fit-content;
+   
+    grid-template-columns:  1fr 4fr;
+    grid-template-rows: 1fr;
+    
+    
+}
+
+header {
+    font-size: 2em;
+}
+
+#list-title {
+    font-size: 20px;
+}
+
+#navbar {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: grid;
+    grid-auto-rows:max-content;
+
+    position: fixed;
+    
+    width: auto;
+    justify-items: stretch;
+    border-right: 1px solid #ccc;
+    
+
+    
+    
+}
+
+#nav-title{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+}
+
+#section-container {
+    grid-column: 2/3;
+    padding: 2% 2% 2% 6%;
+    box-sizing: border-box;
+    
+
+}
+
+.main-section {
+    
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    text-decoration: none;
+    width: 100%;
+    font-size: 22px;
+    padding: 10px 10px 10px 10px;
+    color: rgb(70, 70, 70);
+    box-sizing: border-box;
+    
+}
+
+.nav-link:hover {
+    background-color: blueviolet;
+    color: white;
+}
