@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+   
+}
 body{
     width: 100%;
     background-color: bisque;
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Ubuntu';
+   
 }
 
 
@@ -11,7 +18,13 @@ body{
 #header{
     width: 100%;
     height: auto;
+    
 
+}
+
+#header-img{
+    box-sizing: border-box;
+    width: 100%;
 }
 
 #nav-bar{
@@ -19,15 +32,43 @@ body{
     width: 100%;
     height: auto;
     position: fixed;
-    z-index: 0;
+
     padding: 10px;
     box-sizing: border-box;
     display: flex;
+
     align-items: center;
     justify-content: space-between;
-  
+    box-sizing: border-box;
     
+    flex-wrap: wrap;
     
+}
+
+@media (max-width: 764px) {
+    #description{
+        margin-top: 40px;
+    }
+
+    #title-cont{
+        margin-top: 40px;
+        
+    }
+     
+    #nav-bar{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #space-nav{
+        display: none;
+    }
+
+    #img-cont{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 #img-cont{
@@ -40,7 +81,7 @@ body{
     flex: 1 0 60px;
 }
 
-#nav-link{
+.nav-link{
     text-decoration: none;
     color: #f27364;
 }
@@ -49,15 +90,16 @@ body{
     display: flex;
     width: auto;
     height: 80%;
-    font-size: 18px;
+    font-size: 25px;
     margin-top: 10px;
 }
 
 #nav-btn-1{
     display: flex;
-    width: 100px;
-    height: auto;
+    width: 120px;
+    height: 35px;
     justify-content: center;
+    align-items: center;
     border: 1px solid black;
     box-shadow: 2px 2px 0px  black;
     margin-right: 10px;    
@@ -66,8 +108,9 @@ body{
 #nav-btn-2{
     display: flex;
     width: auto;
-    height: auto;
+    height: 35px;
     justify-content: center;
+    align-items: center;
     border: 1px solid black;
     box-shadow: 2px 2px 0px  black;
     margin-right: 10px;
@@ -76,9 +119,10 @@ body{
 
 #nav-btn-3{
     display: flex;
-    width: 100px;
-    height: auto;
+    width: 120px;
+    height: 35px;
     justify-content: center;
+    align-items: center;
     border: 1px solid black;
     box-shadow: 2px 2px 0px  black;
 }
@@ -86,15 +130,19 @@ body{
 #container{
     margin: 0;
     padding-top: 89px;
+    box-sizing: border-box;
+    width: 100%;
+    
 }
 
 #descripition{
     width: 100%;
+    box-sizing: border-box;
 }
 
 #title-cont{
     height: auto;
-    
+    width: 100%;
 }
 
 #title{
@@ -105,9 +153,10 @@ body{
     margin: 0;
     color: #f27364;
     text-align: center;
-    box-sizing: border-box;
+    font-size: 2.5em;
+
     height: 80%;
-    padding: 5px;
+    padding: 15px;
     
 }
 
@@ -115,8 +164,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 0px;
+    margin: 2% 0px;
+    box-sizing: border-box;
+    height: auto;
 }
+
+@media (max-width: 640px) {
+    iframe{
+        width: 300px;
+        height: auto;
+
+    }
+}
+
+
 
 #form{
     display: flex;
@@ -124,8 +185,15 @@ body{
     align-items: center;
     height: auto;
     margin-bottom: 50px;
+    width: 100%;
 }
 
+#form-header{
+    margin-top: 40px;
+    color:#39556b;
+    font-size: 26px;
+    font-family: 'Ubuntu';
+}
 #email{
     width: 260px;
     height: 30px;
@@ -140,23 +208,105 @@ body{
 .desc-block{
     padding: 0px 20%;
     margin-bottom: 70px;
-    border-bottom: 1px solid #39556b;
+    color: #39556b;
+    font-size: 20px;
+    
    
 }
 
 .desc-txt{
+    
 
     
 }
 
+#members-cont{
+    width: 100%;
+    background-color: #f27364;
+    
+   
+}
+
 #member-plans{
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: auto;
     background-color: #f27364;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    padding: 15px;
+
+    
 }
 
+#plans-title{
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-size: 26px;
+    padding-top: 20px;
+    color: white;
+}
 .plan{
-    height: 50px;
+    height: auto;
+    width: 20%;
+    justify-content: center;
+    min-width: 200px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+}
+.plan-photo{
+    justify-content: center;
+    box-sizing: border-box;    
+}
+
+h2 {
+    margin-bottom: 20px;   
+    
+}
+ 
+.img-plan{
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    
+
+    
+}
+
+.plan-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #39556b;
+    color:rgb(255, 255, 255);
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: 'Ubuntu';
+    font-size: 19px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding:0;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.buy-btn{
+    
+    width: 60%;
+    font-size: 20px;
+    color:#39556b;
+    box-shadow: 2px 2px 0px black;
+  
+    
 }
 
 #submit{

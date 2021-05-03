@@ -20,13 +20,13 @@
             </div>
             <div class="btns-group">
                 <div id="nav-btn-1">
-                    <a href="#form" id="nav-link">SING UP</a>
+                    <a href="#form" class="nav-link">SING UP</a>
                 </div >
                 <div id="nav-btn-2">
-                    <a href="#description" id="nav-link">ADVANTAGES</a>
+                    <a href="#description" class="nav-link">ADVANTAGES</a>
                 </div>
                 <div id="nav-btn-3">
-                    <a href="#" id="nav-link">Link 3</a>
+                    <a href="#member-plans" class="nav-link">PLANS</a>
                 </div>
             </div>
         </nav>
@@ -37,11 +37,11 @@
         <section id="description">
 
             <div id="title-cont">
-                <h1 id="title">Expand Your Keyboard Collection</h1>
+                <h1 id="title">EXPAND YOUR KEYBOARD COLLECTION</h1>
             </div>
 
             <div id="vid">
-                <iframe width="560" height="315" 
+                <iframe id="video" width="560" height="315" 
                 src="https://www.youtube.com/embed/Qr3nYR15wxU" 
                 title="YouTube video player" frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; 
@@ -51,8 +51,7 @@
 
             <div class="desc-block">
                 <h2>What is a mechanical keyboard?</h2>
-                <p class="desc-txt">What IS a mechanical keyboard?
-                    Mechanical keyboards use tiny mechanical devices containing sliders and spring mechanisms, called switches, beneath each key to provide the typist with palpable feedback. The sensation is similar to electrical typewriters of the 90’s and can differ depending on the type of switch used. Cheap, or off-the-mill keyboards often use rubber domes to provide some sort of feedback. The resistance you feel comes from squeezing the rubber dome, which will then expand again, when you release the key. Compared to mechanical switches it is rather “mushy”. </p>
+                <p class="desc-txt">Mechanical keyboards use tiny mechanical devices containing sliders and spring mechanisms, called switches, beneath each key to provide the typist with palpable feedback. The sensation is similar to electrical typewriters of the 90’s and can differ depending on the type of switch used. Cheap, or off-the-mill keyboards often use rubber domes to provide some sort of feedback. The resistance you feel comes from squeezing the rubber dome, which will then expand again, when you release the key. Compared to mechanical switches it is rather “mushy”. </p>
             </div>
             <div class="desc-block">
                 <h2>What is a switch?</h2>
@@ -74,40 +73,64 @@
 
         </section>
 
-        <div id="member-plans">
-
-            <div class="plan">
-                <div class="plan-photo"></div>    
+        <section id="members-cont">
+            <div id="plans-title">
+                <h3>CHOOSE THE PLAN THAT BEST FITS YOU</h3>
+            </div>
+            <div id="member-plans">
+                
+                <div class="plan">
+                    <div class="plan-photo">
+                        <img class="img-plan" src="https://i.ibb.co/mTZBX8B/keyboard.png"  alt="pc keyboard illustration">
+                    </div>
+                    <div class="plan-content">
+                        <h3>PLAN - A</h3>
+                        <p class="plan-content">With this membership you receive a different mechanical keyboard
+                            monthly.
+                        </p>
+                        <div class="btn-container">
+                            <input class="buy-btn" type="button" value="BUY">
+                        </div>
+                    </div>
                 </div>
-                <div class="plan-content">
-                    <div class="plan-btn"></div>
+                <div class="plan">
+                    <div class="plan-photo">
+                        <img class="img-plan" src="https://i.ibb.co/mTZBX8B/keyboard.png"  alt="pc keyboard illustration">
+                    </div>
+                    <div class="plan-content">
+                        <h3>PLAN - B</h3>
+                        <p class="plan-content">With this membership you receive a different mechanical keyboard
+                            each 15 days.
+                        </p>
+                        <div class="btn-container">
+                            <input class="buy-btn" type="button" value="BUY">
+                        </div>
+                    </div>
+                </div>
+                <div class="plan">
+                    <div class="plan-photo">
+                        <img class="img-plan" src="https://i.ibb.co/mTZBX8B/keyboard.png"  alt="pc keyboard illustration">
+                    </div>
+                    <div class="plan-content">
+                        <h3>PLAN - C</h3>
+                        <p class="plan-content">With this membership you receive a different mechanical keyboard
+                            weekly.
+                        </p>
+                        <div class="btn-container">
+                            <input class="buy-btn" type="button" value="BUY">
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="plan">
-                <div class="plan-photo"></div>    
-                </div>
-                <div class="plan-content">
-                    <div class="plan-btn"></div>
-                </div>
-            </div>
-
-             <div class="plan">
-                <div class="plan-photo"></div>    
-                </div>
-                <div class="plan-content">
-                    <div class="plan-btn"></div>
-                </div>
-            </div>
-
-        </div>
+        </section>
 
 
-        
+    
         <form action="https://www.freecodecamp.com/email-submit" id="form">
-            <input type="email" id="email" placeholder="enter you email here
+            <h3 id="form-header">Receive Our Newsletter</h3>
+            <input type="email" id="email" name="email" placeholder="enter you email here
             " required>
-            <input type="submit" id="submit" value="SUBMIT">
+            <input type="submit" id="submit" value="SUBMIT" href="https://www.freecodecamp.com/email-submit">
         </form>
 
      
